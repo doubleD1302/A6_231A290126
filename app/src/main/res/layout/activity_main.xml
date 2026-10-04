@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/student" />
+
+        <EditText
+            android:id="@+id/edtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtMssv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mssv"
+            android:importantForAutofill="no"
+            android:inputType="textCapCharacters"
+            android:maxLength="10"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_mon_hoc"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spMonHoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_he"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgHeDaoTao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbChinhQuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/he_chinh_quy" />
+
+            <RadioButton
+                android:id="@+id/rbVlvh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/he_vlvh" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_buoi"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbSang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buoi_sang" />
+
+        <CheckBox
+            android:id="@+id/cbChieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buoi_chieu" />
+
+        <CheckBox
+            android:id="@+id/cbToi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buoi_toi" />
+
+        <TextView
+            android:id="@+id/tvSoBuoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/label_thong_bao" />
+
+        <ToggleButton
+            android:id="@+id/tgUuTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textOff="@string/uu_tien_off"
+            android:textOn="@string/uu_tien_on" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/swCheDoToi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:text="@string/label_che_do_toi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnXacNhan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm" />
+
+            <Button
+                android:id="@+id/btnLamLai"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
